@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Management App</title>
     <script src="script.js" defer></script>
-    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet" href="styles.css"
+    
 </head>
 <body>
     <main>
@@ -13,8 +15,8 @@
         <section>
             <h1>Task Management</h1>
 
-           <div>
-                
+           <div class="box"></div>
+            
                 <input  id="task" type="text" placeholder="Task"/> 
                 
                 
@@ -50,7 +52,11 @@
             
 
                 <label for="filter">Filter by:
-                <input  id="filter" type="text" placeholder=""/> 
+                <select name="" id="filter">
+                        <option value="category">category</option>
+                        <option value="status">status</option>
+                        
+                    </select>
                 </label>
 
 

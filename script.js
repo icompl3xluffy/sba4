@@ -57,5 +57,21 @@ function render() {
   }
 }
 
-let filter=Document.getElementById(filter)
- 
+let filterInput=document.getElementById("filter")
+filterInput.addEventListener("change", (e)=> {
+    for( let i=0;i<toDoList.length; i++){
+        if( filterInput.value==="category"){
+         toDoList[i].filter(categoryInfo)
+         return item.taskName
+        }
+        if( filterInput.value==="status"){
+
+         toDoList[i].filter(statusInfo)
+         return item.taskName
+        }
+
+    }
+})
+
+
+
