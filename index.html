@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Management App</title>
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <main>
@@ -17,7 +18,7 @@
                 <input  id="task" type="text" placeholder="Task"/> 
                 
                 
-               <label for="category">Status:
+               <label for="category">Category:
                     <select name="" id="category">Category
                         <option value="">-Select-</option>
                         <option value="Work">Work</option>
@@ -28,13 +29,13 @@
 
 
                 <label for="duedate">Deadline:
-                    <input type="date" id="dueDate" value="2018-07-22"/> 
+                    <input type="date" id="dueDate" value="2026-09-22"/> 
                 </label>
-                
+-               
 
                 <label for="status">Status:
                     <select name="" id="status">
-                        <option value="">-Select-</option>
+                        <option value="overdue">OverDue</option>
                         <option value="Not-Started">Not-Started</option>
                         <option value="InProgress">InProgress</option>
                         <option value="Completed">Completed</option>
@@ -42,11 +43,17 @@
                 </label>
 
                 <button id="add">Add Task</button>
+
+                <ul id="list">
+
+                </ul>
             
 
                 <label for="filter">Filter by:
                 <input  id="filter" type="text" placeholder=""/> 
                 </label>
+
+
 
             </div> 
          
